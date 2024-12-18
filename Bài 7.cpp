@@ -1,23 +1,19 @@
 #include <stdio.h>
 using namespace std;
 int main (){
-	int a[100],count=0,n;
+	int a[100],n,count=0;
 	printf ("nhap so phan tu trong mang: ");
 	scanf ("%d", &n);
-	for (int i =0; i <=n-1;i++){
+	for (int i =0; i <=n-1;){
 		printf ("nhap phan tu thu %d (phai la so le): ",i+1);
 		scanf ("%d",&a[i]);
-		if (a[i]%2!=0){
-			count++;
+		if (a[i]%2==1){
+			i++;
+			continue;
 		}
 	}
 	for (int i = 0; i <=n-1; i++){
-	if (count==n){
 		printf ("cac phan tu so le trong mang la: %d\n", a[i]);
-	}
 }
-	if (count !=n){
-		printf ("co it nhat mot phan tu khong phai la so le. \n");
-	}
 	return 0;
 }
