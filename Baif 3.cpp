@@ -14,9 +14,7 @@ int main(){
 			count++;
 		}
 		if (count == 5){
-			for (int i = 1; i < 6; i++){
-				printf ("%d ", a[i]);
-			}
+			printf ("mang khong co chua so chan");
 		}
 	}
 	return 0;
